@@ -16,10 +16,11 @@ I decided to start a project from scratch mixing Kotlin and Blockchain. Reasons?
 ## What are we doing?
 Good question! But you won't like the answer: I do not know.
 Frst I need to understand better what are all the "components" involved in a so-called "Blockchain".
-Obviously there is a mining program, people running it (miners), there's also a blockchain and there are some wallets. How do all of this connect?
+Obviously there is a mining program, people running it (miners), there's also a blockchain and there are wallets. How do all of these connect?
 [Will continue updating here ...]
 
 ## TODO
-* [ ] Understand all the parts involved in a Blockchain
+* [ ] Understand all the parts involved in a Blockchain - **ongoing**
 * [ ] Document all the parts involved in simple terms
-* [ ] Initialize a Spring Boot app - or more?
+* [X] Initialize a Spring Boot app
+	* [Issue] JRE != JDK. Got some error when running `./mvnw install` related to a mismatch between the Java Runtime and Java SDK. Fixde by installing `default-jdk` package. "Esto con docker no pasa" :P
