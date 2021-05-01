@@ -15,9 +15,29 @@ I decided to start a project from scratch mixing Kotlin and Blockchain. Reasons?
 
 ## What are we doing?
 Good question! But you won't like the answer: I do not know.
-Frst I need to understand better what are all the "components" involved in a so-called "Blockchain".
+First I need to understand better what are all the "components" involved in a so-called "Blockchain".
 Obviously there is a mining program, people running it (miners), there's also a blockchain and there are wallets. How do all of these connect?
-[Will continue updating here ...]
+The main concept beneath all of these components is "node".
+There can be many different types of nodes, but let's ignore all of them except from one that we will call "full-node".
+This full-node will be able to:
+- Allow for adding new data (transactions?)
+- Generate a new block (aka mining)
+- Register/Connect to other nodes
+- Synchronize with all the other nodes to have the most up-to-date data.
+
+Depending on the usage of the blockchain some feature will be more interesting than others.
+For example, from a Miner perspective only the "mining and synchronizing" operations are relevant.
+As well as from a Wallet perspective only the "adding data and synchronizing" operations are.
+
+Regarding the Blockchain itself it is a chain of blocks (as the name implies :facepalm:).
+A block is basically a chunk of data. For Bitcoin, for instance, the data which the block contains are "transactions".
+
+[ongoing]
+Ongoing questions:
+- How does mining work? Proof of work and incentives.
+- How are other nodes initially found? In Bitcoin: DNS, Previous list, Hardcoded nodes
+- Is new data (new transactions) synchronized continuously? How is the order in this data kept? Does it matter?
+- How do miners know when a "block-worth-of-data" is available?
 
 ## TODO
 * [X] Initialize a Spring Boot app
