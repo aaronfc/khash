@@ -20,7 +20,10 @@ Obviously there is a mining program, people running it (miners), there's also a 
 [Will continue updating here ...]
 
 ## TODO
-* [ ] Understand all the parts involved in a Blockchain - **ongoing**
-* [ ] Document all the parts involved in simple terms
 * [X] Initialize a Spring Boot app
 	* [Issue] JRE != JDK. Got some error when running `./mvnw install` related to a mismatch between the Java Runtime and Java SDK. Fixde by installing `default-jdk` package. "Esto con docker no pasa" :P
+* [X] Add sample REST controller: `DemoController`
+* [ ] Understand all the parts involved in a Blockchain - **ongoing**
+* [ ] Document all the parts involved in simple terms
+* [ ] Define REST API to interact with blockchain
+* [ ] Create in-memory blockchain
